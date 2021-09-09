@@ -1,4 +1,4 @@
-balanced-go (in development - not working)
+balanced-go (in development )
 ====
 
 [![Build Status](https://github.com/btcsuite/btcd/workflows/Build%20and%20Test/badge.svg)](https://github.com/btcsuite/btcd/actions)
