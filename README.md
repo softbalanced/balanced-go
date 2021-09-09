@@ -1,12 +1,12 @@
-dashd-go (in development - not working)
+balanced-go (in development - not working)
 ====
 
 [![Build Status](https://github.com/btcsuite/btcd/workflows/Build%20and%20Test/badge.svg)](https://github.com/btcsuite/btcd/actions)
-[![Coverage Status](https://coveralls.io/repos/github/dashevo/dashd-go/badge.svg?branch=master)](https://coveralls.io/github/dashevo/dashd-go?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/dashevo/balanced-go/badge.svg?branch=master)](https://coveralls.io/github/dashevo/balanced-go?branch=master)
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/btcsuite/btcd)
 
-dashd-go is an alternative full node dash implementation written in Go (golang).
+balanced-go is an alternative full node balanced implementation written in Go (golang).
 
 This project is currently not in active development, however the rpc-client it
 contains is.  It is extremely stable and has been in production use since October 2013.
@@ -25,11 +25,11 @@ ensures all individual transactions admitted to the pool follow the rules
 required by the block chain and also includes more strict checks which filter
 transactions based on miner requirements ("standard" transactions).
 
-One key difference between dashd-go and Dash Core is that dashd-go does *NOT* include
+One key difference between balanced-go and Balanced Core is that balanced-go does *NOT* include
 wallet functionality and this was a very intentional design decision.  See the
 blog entry [here](https://web.archive.org/web/20171125143919/https://blog.conformal.com/btcd-not-your-moms-bitcoin-daemon)
 for more details.  This means you can't actually make or receive payments
-directly with dashd-go.
+directly with balanced-go.
 
 ## Requirements
 
@@ -65,7 +65,7 @@ $ cd $GOPATH/src/github.com/btcsuite/btcd
 $ GO111MODULE=on go install -v . ./cmd/...
 ```
 
-- dashd-go (and utilities) will now be installed in ```$GOPATH/bin```.  If you did
+- balanced-go (and utilities) will now be installed in ```$GOPATH/bin```.  If you did
   not already add the bin directory to your system path during Go installation,
   we recommend you do so now.
 
